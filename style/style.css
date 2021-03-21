@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(150px, 0.25fr) 1fr;
+      grid-template-columns: minmax(150px, 0.25fr) 1fr;
+  -ms-grid-rows: minmax(220px, 0.3fr) 1fr;
+      grid-template-rows: minmax(220px, 0.3fr) 1fr;
+  gap: 0px 0px;
+      grid-template-areas: "lang ip" "lang rev";
+}
+
+#lang-container {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: lang;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f1f1f1;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 100%;
+}
+
+#lang-container button {
+  margin: 20px 0;
+  padding: 10px 15px;
+  font-size: 2.2rem;
+  border: solid 2px;
+  border-radius: 14px;
+  width: 150px;
+  word-break: break-all;
+  cursor: pointer;
+  background-color: white;
+  -webkit-transition: background-color .2s ease, color .2s ease;
+  transition: background-color .2s ease, color .2s ease;
+}
+
+#lang-container button[language=python] {
+  color: #bcd145;
+  border-color: #bcd145;
+}
+
+#lang-container button[language=python]:hover {
+  color: white;
+  background-color: #bcd145;
+}
+
+#lang-container button[language=python].click {
+  color: white;
+  background-color: #bcd145;
+}
+
+#lang-container button[language=php] {
+  color: #6f4f94;
+  border-color: #6f4f94;
+}
+
+#lang-container button[language=php]:hover {
+  color: white;
+  background-color: #6f4f94;
+}
+
+#lang-container button[language=php].click {
+  color: white;
+  background-color: #6f4f94;
+}
+
+#lang-container button[language=bash] {
+  color: #1b1b1b;
+  border-color: #1b1b1b;
+}
+
+#lang-container button[language=bash]:hover {
+  color: white;
+  background-color: #1b1b1b;
+}
+
+#lang-container button[language=bash].click {
+  color: white;
+  background-color: #1b1b1b;
+}
+
+#lang-container button[language=netcat] {
+  color: #2b3466;
+  border-color: #2b3466;
+}
+
+#lang-container button[language=netcat]:hover {
+  color: white;
+  background-color: #2b3466;
+}
+
+#lang-container button[language=netcat].click {
+  color: white;
+  background-color: #2b3466;
+}
+
+#lang-container button[language=lua] {
+  color: #0b1c7a;
+  border-color: #0b1c7a;
+}
+
+#lang-container button[language=lua]:hover {
+  color: white;
+  background-color: #0b1c7a;
+}
+
+#lang-container button[language=lua].click {
+  color: white;
+  background-color: #142275;
+}
+
+#input-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: ip;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#input-container div {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#input-container div:nth-child(2) {
+  margin-top: 20px;
+  color: #56bb40;
+  font-weight: 600;
+  display: none;
+}
+
+input {
+  margin: 10px;
+  font-size: 1.6rem;
+  width: 300px;
+  border: solid 2px;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+#output {
+  margin-top: 4rem;
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+
+#output pre {
+  white-space: inherit;
+}
+
+#output code {
+  cursor: pointer;
+  margin: 10px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  word-break: break-all;
+}
+
+#output code:hover {
+  background-color: #a8a8a8;
+}
+/*# sourceMappingURL=style.css.map */
